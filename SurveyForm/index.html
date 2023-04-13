@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Survey Games</h1>
+      <p id="description">Survey about your favorite games.</p>
+      <form id="survey-form" >
+        <fieldset>
+          <label id="name-label" for="name">Name <input type="text" name="name" id="name" placeholder="Enter your name" required/></label>
+          <label id="email-label" for="email">Email <input type="email" name="email" id="email" placeholder="Enter your Email" required/></label>
+          <label id="number-label" for="number">Age <input type="number" name="number" id="number" min="8" max="99" placeholder="Enter your Age" required/></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown"> Choose your favorite game.
+            <select id="dropdown" name="dropdown">
+              <option value="">(Select one)</option>
+              <option value="1">Hide and Seek</option>
+              <option value="2">Simon Says</option>
+              <option value="3">Red Light, Green Light</option>
+              <option value="4">London Bridge Is Falling Down</option>
+              <option value="5">Other</option>
+            </select>
+          </label>
+          <h4>When did you first play it?</h4>
+          <label for="child"> <input id="child" name="when" type="radio" value="As a child" class="inline"/> As a child</label>
+          <label for="young"><input id="young" name="when" type="radio" value="As a young person" class="inline"/> As a young person</label>
+          <label for="adult"><input id="adult" name="when" type="radio" value="As an adult" class="inline"/> As an adult</label>
+          <label for="veracity"><input type="checkbox" name="veracity" id="veracity" class="inline" value="fveracity" required/> I accept that everything I say is true.</label>
+          <label for="fveracity"><input type="checkbox" name="fveracity" id="fveracity" class="inline" value="veracity" required/> Also, I accept that there might have been a little lie.</label>
+        </fieldset>
+        <fieldset>
+          <label for="anecdote"> Tell us an anecdote about your favorite game.<textarea id="anecdote" name="anecdote" placeholder="Tell us an anecdote about your favorite game."></textarea></label>
+        </fieldset>
+        <input id="submit" type="submit" value="submit"/>
+      </form>
+    </div>
+  </body>
+</html>
