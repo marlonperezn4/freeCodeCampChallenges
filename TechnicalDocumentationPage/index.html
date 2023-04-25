@@ -9,7 +9,7 @@
   <body>
     <!-- Menú -->
     <nav id="navbar">
-      <header></header>
+      <header>Capibaras</header>
       <a href="#El_roedor_mas_grande_del_mundo" class="nav-link">El roedor mas grande del mundo</a>
       <a href="#Distribucion_geografica" class="nav-link">Distribucion geografica</a>
       <a href="#Estado_de_conservacion" class="nav-link">Estado de conservacion</a>
@@ -104,22 +104,6 @@ Dentro de estas regiones, los capibaras prefieren hábitats que tengan acceso a 
 
         <header>Galeria de capibaras</header>
 
-        <code
-        >echo "hola";
-        </code>
-        <code
-        >echo "hola";
-        </code>
-        <code
-        >echo "hola";
-        </code>
-        <code
-        >echo "hola";
-        </code>
-        <code
-        >echo "hola";
-        </code>
-
         <div class="gallery">
           <img src="https://vevico.files.wordpress.com/2021/04/el-roedor-mas-grande-del-mundo.jpg" alt="capibara" />
 
@@ -133,6 +117,76 @@ Dentro de estas regiones, los capibaras prefieren hábitats que tengan acceso a 
 
         <img src="https://scontent.fbog2-4.fna.fbcdn.net/v/t39.30808-6/335428177_2380250898816932_7167129883827441033_n.jpg?stp=dst-jpg_s720x720&_nc_cat=100&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=HDmd9SjCI-wAX_PSCpg&_nc_ht=scontent.fbog2-4.fna&oh=00_AfBZd7NSktkg0poT1UC33gIGx6_YAufK0m_OD5OVgLxByA&oe=644B86CD" alt="capibara-6" />
         </div>
+
+        <h4>¿Cómo se insertó la galeria?</h4>
+        <p>HTML. Primero se crea un div con la clase "gallery"</p>
+        
+        <code>
+  <div class="codigo">
+    <code>&lt;div class="gallery"&gt;&lt;/div&gt;</code>
+  </div>
+</code>
+
+<p>Ahora inserta las imágenes con la etiqueta src</p>
+<div class="codigo">
+<pre><code>
+  &lt;div class="gallery"&gt;
+
+    &lt;img src="https://vevico.files.wordpress.com/2021/04/el-roedor-mas-grande-del-mundo.jpg" alt="capibara" &gt;
+
+    &lt;img src="https://fotografias-neox.atresmedia.com/clipping/cmsimages01/2022/01/31/1F1F6678-7110-4E1F-AB58-7622A2E58006/97.jpg?crop=1366,768,x0,y15&amp;width=1600&amp;height=900&amp;optimize=high&amp;format=webply" alt="capibara-2"/&gt;
+
+    &lt;img src="https://misanimales.com/wp-content/uploads/2022/12/shutterstock_2066162870-768x508.jpg?auto=webp&amp;quality=45&amp;width=1920&amp;crop=16:9,smart,safe" alt="capibara-3"/&gt;
+
+    &lt;img src="https://scontent.fbog2-4.fna.fbcdn.net/v/t39.30808-6/240304075_562399335176966_8283770556183466399_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=a26aad&amp;_nc_ohc=ei-iqPK8FSIAX_diE6f&amp;_nc_ht=scontent.fbog2-4.fna&amp;oh=00_AfAVHt6I0Pw4Ota5UV5IY5mR5Dozx5Gjurq-GGuGZJ3UBg&amp;oe=644BE0B4" alt="capibara-4" /&gt;
+
+    &lt;img src="https://scontent.fbog2-3.fna.fbcdn.net/v/t39.30808-6/341748470_526902652984468_8326184997811000866_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=8bfeb9&amp;_nc_ohc=NE-1r8koKjUAX_aKMcj&amp;_nc_ht=scontent.fbog2-3.fna&amp;oh=00_AfAz-Hh1u7P05MTbJfVdOF2OwAvJbOnpFv9UU17kmtaHyg&amp;oe=644C0DFB" alt="capibara-5"/&gt;
+
+    &lt;img src="https://scontent.fbog2-4.fna.fbcdn.net/v/t39.30808-6/335428177_2380250898816932_7167129883827441033_n.jpg?stp=dst-jpg_s720x720&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=5cd70e&amp;_nc_ohc=HDmd9SjCI-wAX_PSCpg&amp;_nc_ht=scontent.fbog2-4.fna&amp;oh=00_AfBZd7NSktkg0poT1UC33gIGx6_YAufK0m_OD5OVgLxByA&amp;oe=644B86CD" alt="capibara-6"/&gt;
+
+  &lt;/div&gt;
+</code></pre>
+</div>
+
+<p>CSS. Se definen las propiedades para el contenedor gallery</p>
+<div class="codigo">
+  <pre>
+<code>.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}</code></pre>
+</div>
+
+<p>Se definen las propiedades para las imágenes</p>
+<div class="codigo">
+<pre>
+<code>.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+  </code></pre>
+</div>
+
+<p>Se crea un pseudoelemento para empujar el último elemento a la izquierda  cuando la galería tenga un diseño de dos columnas</p>
+<div class="codigo">
+  <pre>
+<code>.gallery::after {
+  content: "";
+  width: 350px;
+}
+  </code></pre>
+</div>
+
       </section>
 
 
