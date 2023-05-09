@@ -63,6 +63,19 @@
   padding: 2rem;
 }
 
+.grid {
+  display: grid;
+  gap: 10px;
+  background-color: #a4c2db;
+  padding: 10px;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: repeat(3, min-content);
+}
+
+.logo, .description {
+  background-color: #777;
+}
+
 #how-its-works {
   background-color: #a255ab;
   grid-column: 2 / 3;
