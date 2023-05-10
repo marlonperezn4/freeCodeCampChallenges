@@ -27,6 +27,7 @@
 
 #nav-bar {
   width: 50%;
+  top: 0;
 }
 
 #nav-bar ul {
@@ -192,7 +193,7 @@ input[type="email"] {
 MÓVIL
 =============================================*/
 
-@media (max-width:960px){
+@media (max-width:767px){
   /**/
   #header {
     width: 100%;
