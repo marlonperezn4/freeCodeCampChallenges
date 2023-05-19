@@ -132,3 +132,35 @@ footer a {
   text-decoration: none;
   color: var(--main-white);
 }
+
+/*=============================================
+TABLET
+=============================================*/
+
+@media (max-width:991px) {
+
+  .nav-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-item a {
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+    color: var(--main-white);
+    font-size: .6em;
+    text-align: center;
+  }
+
+  #projects {
+    grid-template-columns: auto;
+  }
+
+}
