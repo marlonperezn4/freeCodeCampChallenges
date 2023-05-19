@@ -112,6 +112,11 @@
   opacity: 0.3;
 }
 
+#video {
+  width: 560px; 
+  height: 315px;
+}
+
 #how-its-works > * {
   position: relative;
   z-index: 1;
@@ -193,7 +198,7 @@ input[type="email"] {
 MÓVIL
 =============================================*/
 
-@media (max-width:767px){
+@media (max-width:991px){
   /**/
   #header {
     width: 100%;
@@ -204,11 +209,17 @@ MÓVIL
     justify-content: center;
     position: relative;
   }
+
+  #header-img {
+    display: none;
+  }
   /**/
 
   .wrap{
     padding-top: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   #nav-bar {
@@ -227,6 +238,13 @@ MÓVIL
     display: block;
   }
 
+  .grid {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
   /**/
   #features {
   scroll-margin-top: 0px;
@@ -240,10 +258,23 @@ MÓVIL
   /**/
   #how-its-works {
   scroll-margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .step {
+    width: 80%;
+  }
+
+  #video {
+    width: 80%; 
   }
 
   /**/
   #contact-us {
   scroll-margin-top: 0px;
   }
+
 }
